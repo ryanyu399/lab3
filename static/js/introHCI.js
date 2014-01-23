@@ -21,6 +21,7 @@ function initializePage()
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 	$("a.thumbnail").click(projectClick);
+   $("#submitBtn").click(updateProject);
 }
 
 function projectClick(e) 
@@ -48,11 +49,6 @@ function projectClick(e)
 
        description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
     }
-}
-
-function initializePage() {
-   ...
-    $("#submitBtn").click(updateProject); 
 }
 
 function updateProject(e) {
